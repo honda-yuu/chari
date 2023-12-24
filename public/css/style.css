@@ -1,0 +1,30 @@
+
+.star {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.star input[type=radio] {
+  display: none;
+}
+.star label {
+  position: relative;
+  padding: 0 5px;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 35px;
+}
+.star label:hover {
+  color: #ffcc00;
+}
+.star label:hover ~ label {
+  color: #ffcc00;
+}
+.star input[type=radio]:checked ~ label {
+  color: #ffcc00;
+}
+
+#map{
+  width: 900px;
+  height: 600px;
+}
