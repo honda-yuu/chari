@@ -15,6 +15,7 @@ class Review extends Model
         'facility_id',
         'name',
         'star_number',
+        'image',
         
         ];
 }

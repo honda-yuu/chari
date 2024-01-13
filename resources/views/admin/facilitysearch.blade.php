@@ -8,7 +8,7 @@
          <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
     </head>
     
-    <x-app-layout>
+    <x-admin>
        <header>
           <h1>RESEARCH PARK</h1>
        </header>
@@ -19,12 +19,12 @@
            
            <h1>駐輪場を探す</h1>
            <div class="search">
-                <form action="/park/facilitysearch" method="GET">
+                <form action="/admin/park/facilitysearch" method="GET">
                     @csrf
                    <input type="text" name="keyword" value="{{ request()->input('keyword') }}">
                    <input type="submit" value="検索">
                 </form>
-                <form action="/park/facilitysearch" method="GET">
+                <form action="/admin/park/facilitysearch" method="GET">
                     @csrf
                        <h2>地域ごとで探す</h2>
                        <select name="regionId" class="form-config" >
@@ -44,7 +44,7 @@
                 @foreach($facilities as $facility)
                     <div class='facility'>
                         <h2 class='name'>
-                           <a href="/park/{{ $facility->id }}">{{ $facility->name }}</a>
+                           <a href="/admin/park/{{ $facility->id }}">{{ $facility->name }}</a>
                         </h2>
                        <p class='opening_time'>{{ $facility->opening_time }}</p>
                        <p class='per_hour_fee'>{{ $facility->per_hour_fee }}</p>
@@ -58,5 +58,5 @@
             
             
         </body>
-    </x-app-layout>
+    </x-admin>
 </html>

@@ -1,52 +1,60 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\admin;
 
+use App\Http\Controllers\Controller;
+use App\Models\Admin;
+use App\Providers\RouteServiceProvider;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rules;
+use Illuminate\View\View;
 use App\Models\Facility;
-use App\Models\Contact;
 use App\Models\User;
 use App\Models\Region;
-use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\ContactRequest;
 use App\Models\Review;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Js;
-use Cloudinary; 
 
-class BikeController extends Controller
+
+
+class AdminController extends Controller
 {
-    /*トップページの表示*/
+    public function answer(Contact $contact)
+    {
+       return view('admin.answer')->with(['contacts' => $contact->get()]);
+    }
+    
+    /*public function answerStore()
+    {
+        
+    }*/
     
     public function index(Facility $facility)
     {
-        return view('/park/index')->with(['facilities' => $facility->getPaginateByLimit()]);
+        return view('/admin/index')->with(['facilities' => $facility->getPaginateByLimit()]);
     }
     
-    /*詳細表示*/
-    
-    public function show(Facility $facility, Review $review , Request $request)
+     public function show(Facility $facility, Review $review , Request $request)
     {   
         $review = Review::where('facility_id', $facility->id)->latest()->get();
        // $image1 = Cloudinary::upload($request->file('image')->getRealPath())->getSecurePath();
         //dd($image1);
-        return view('/park/show')->with(['facility' => $facility , 'reviews' => $review]);
+        return view('/admin/show')->with(['facility' => $facility , 'reviews' => $review]);
         
         
     }
     
-    
-    /*問い合わせフォーム*/
-    
-    public function contact(Facility $facility)
+     public function contact(Facility $facility)
     {
-        return view('/park/contact')->with(['facility' => $facility]);
+        return view('/admin/contact')->with(['facility' => $facility]);
     }
-    
-    /*問い合わせフォーム保存*/
     
     public function store(ContactRequest $request ,Contact $contact , User $user)
-    {  //$input['facility_id'] =$facility->id;
+    {  
        
        $input = $request['contact'];
        $user_id= Auth::id();
@@ -55,17 +63,12 @@ class BikeController extends Controller
        $contact->name = $input["name"];
        $contact->body = $input["body"];
        $contact->save();
-       return redirect('/park/');
+       return redirect('/admin/index');
     }
-    
-  
    
-    /*検索機能*/
-    
-     public function facilitysearch(Request $request, Facility $facility)
+    public function facilitysearch(Request $request, Facility $facility)
     {   
          
-        
         $keyword = $request->input('keyword');
         $query = Facility::query();
          if(!empty($keyword))
@@ -80,14 +83,11 @@ class BikeController extends Controller
         $regions=Region::get();
         $facilities = $query->get();
         //dd($regions);
-        return view('/park/facilitysearch')->with(['keyword'=> $keyword, 'facilities' => $facilities, 'regions' => $regions]);
+        return view('/admin/facilitysearch')->with(['keyword'=> $keyword, 'facilities' => $facilities, 'regions' => $regions]);
     
-       
-        
     }
     
-    /*口コミ機能*/
-     public function review(Facility $facility)
+    public function review(Facility $facility)
      {   
          return view('/park/review')->with(['facility' =>$facility]);
      }
@@ -104,13 +104,12 @@ class BikeController extends Controller
          }
          $input['user_id'] = Auth::id();
          $review->fill($input)->save();
-         return redirect('/park/'.$review->facility_id);
+         return redirect('/admin/park/'.$review->facility_id);
      }
      
      public function selectform()
      {
-         return redirect('/park/');
+         return redirect('/admin/park/');
      }
-     
-}     
-      
+
+}

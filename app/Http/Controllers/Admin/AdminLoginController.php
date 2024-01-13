@@ -31,4 +31,6 @@ class AdminLoginController extends Controller
             'login' => ['ログインに失敗しました'],
         ]);
     }
+    
+    
 }

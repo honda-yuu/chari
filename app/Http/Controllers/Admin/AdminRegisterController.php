@@ -40,6 +40,8 @@ class AdminRegisterController extends Controller
 
         Auth::guard('admin')->login($admin);
 
-        return redirect(RouteServiceProvider::HOME);
+        return redirect('/admin/index');
     }
+    
+    
 }

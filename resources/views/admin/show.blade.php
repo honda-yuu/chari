@@ -7,7 +7,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
-    <x-app-layout>
+    <x-admin>
    
         <body>
             <div class="name">
@@ -120,11 +120,11 @@ function initMap() {
                 @endforeach
             </div>
             <div class="review">
-                <a href="/park/review/{{$facility->id}}">口コミを書く</a>
+                <a href="/admin/park/review/{{$facility->id}}">口コミを書く</a>
             </div>
             <div class="top-page">
-                <a href="/park/index">トップページへ戻る</a>
+                <a href="/admin/park/index">トップページへ戻る</a>
             </div>
         </body>
-    </x-app-layout>    
+    </x-admin>    
 </html>

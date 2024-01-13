@@ -26,5 +26,31 @@
 
 #map{
   width: 900px;
-  height: 600px;
+  
+}
+
+.facility{
+  padding: 20px;
+  /*text-align:center;*/
+  
+  
+}
+a:link {
+  color: #65BBE9;
+}
+
+a:visited {
+  color: #551A8B;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #FF0000;
+  text-decoration: underline;
+}
+
+.facilityimage{
+  max-width:20%;
+  display: flex;
+  justify-content: space-between;
 }

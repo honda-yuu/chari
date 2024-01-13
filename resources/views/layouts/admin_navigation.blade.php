@@ -15,14 +15,17 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('index')" :active="request()->routeIs('index')">
+                    <x-nav-link :href="route('admin.index')" :active="request()->routeIs('admin.index')">
                         トップページ
                     </x-nav-link>
-                     <x-nav-link :href="route('facilitysearch')" :active="request()->routeIs('facilitysearch()')">
+                     <x-nav-link :href="route('admin.facilitysearch')" :active="request()->routeIs('admin.facilitysearch')">
                         駐輪場を探す
                     </x-nav-link>
-                    <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')">
+                    <x-nav-link :href="route('admin.contact')" :active="request()->routeIs('admin.contact')">
                         問い合わせフォーム
+                    </x-nav-link>
+                     <x-nav-link :href="route('admin.answer')" :active="request()->routeIs('admin.answer')">
+                        返信
                     </x-nav-link>
                     
 

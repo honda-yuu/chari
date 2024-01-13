@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
     </head>
-        <x-app-layout>
+        <x-admin>
         <header>
           <h1>RESEARCH PARK</h1>
         </header>
@@ -15,7 +15,7 @@
         <h1>口コミ投稿</h1>
         
         <div class="reviewform">
-            <form action="/park" method="POST" enctype="multipart/form-data">
+            <form action="/admin/park" method="POST" enctype="multipart/form-data">
                 @csrf
         <div class="username">
             <h2>ニックネーム</h2>
@@ -48,5 +48,5 @@
        </div>
         
     </body>
-    </x-app-layout>
+    </x-admin>
 </html>

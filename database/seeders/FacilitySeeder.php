@@ -32,8 +32,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'熊本市庁舎自転車駐車場',
-            'latitude' =>32.803565 ,
-            'longitude' =>130.708906 ,
+            'latitude' =>32.803743016159494, 
+            'longitude' =>130.7087820171909 ,
+            'image' =>'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993041/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_020855_yhkldk.png' ,
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993032/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_020840_uatvh3.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993037/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_020916_zq4prn.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -51,8 +54,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'熊本市庁舎北側自転車駐車場',
-            'latitude' =>32.803565 ,
-            'longitude' =>130.708906 ,
+            'latitude' =>32.803743016159494 ,
+            'longitude' =>130.7087820171909 ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993046/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_020932_ehmyov.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993051/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_021005_dfwvo8.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993096/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_020949_mbtep4.png',
             ]);
             
             /*DB::table('facilities')->insert([
@@ -89,8 +95,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'熊本市自転車駐車場',
-            'latitude' => 32.802891396393115,
-            'longitude' => 130.70723939320783,
+            'latitude' => 32.802705492078225, 
+            'longitude' => 130.7072217815846,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993327/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_021451_naq0ii.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993323/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_021437_mrpgwu.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993330/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_021504_dkk394.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -109,11 +118,14 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'鶴屋百貨店駐輪場',
-            'latitude' => 32.80236543819347, 
-            'longitude' =>130.71099630312833 ,
+            'latitude' => 32.801684810506714, 
+            'longitude' =>130.7116483997317, 
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994661/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023555_f3s4si.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994667/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023618_uwndov.png',
+            'image3' => '',
             ]);
             
-            DB::table('facilities')->insert([
+            /*DB::table('facilities')->insert([
             'opening_time' => '8-21時（20時まで入庫可）',
             'per_hour_fee' => '当日鶴屋での買い物レシート2160円以上で無料。レシートなしなら1日100円',
             'address' => '熊本県熊本市中央区安政町2-5',
@@ -130,7 +142,7 @@ class FacilitySeeder extends Seeder
             'name' =>'鶴屋安政町駐輪場',
             'latitude' =>32.80170656301667,
             'longitude' => 130.71164226851812,
-            ]);
+            ]);*/
             
             DB::table('facilities')->insert([
             'opening_time' => '24時間',
@@ -147,8 +159,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'熊本市上通自転車駐車場',
-            'latitude' =>32.80425397546283, 
-            'longitude' =>130.7118549220896  ,
+            'latitude' =>32.80407574864024, 
+            'longitude' =>130.71184663384474, 
+            'image' =>'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991116/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_013753_irqzpj.png' ,
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991114/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_013738_vxthnz.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991119/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_013820_mdy8ht.png',
             ]);
             
             /*DB::table('facilities')->insert([
@@ -170,10 +185,10 @@ class FacilitySeeder extends Seeder
             'longitude' => ,
             ]);*/
             
-            DB::table('facilities')->insert([
+            /*DB::table('facilities')->insert([
             'opening_time' => '24時間',
             'per_hour_fee' => '自転車　8時間ごとに100円（2時間無料）、自動二輪（125㏄以下）4時間ごとに100円（2時間無料）',
-            'address' => '熊本県熊本市中央区下通1-12',
+            'address' => '熊本県熊本市中央区下通2丁目5-5',
             'link' => 'https://www.jmpsa.or.jp/society/parking/area43/p-14265.html',
             'phone_number' => '096-354-3611',
             'capacity' => '自転車 313台 自動二輪（125㏄以下）119台',
@@ -184,10 +199,13 @@ class FacilitySeeder extends Seeder
             'region_id' => 1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
-            'name' =>'くまもとまちなか駐輪場銀座通り',
+            'name' =>'くまもとまちなか駐輪場シャワー通り',
             'latitude' =>32.79820768163371, 
             'longitude' => 130.70770001622492 ,
-            ]);
+            'image' => '',
+            'image2' => '',
+            'image3' => '',
+            ]);*/
             
             /*DB::table('facilities')->insert([
             'opening_time' => '24時間',
@@ -244,6 +262,9 @@ class FacilitySeeder extends Seeder
             'name' =>'くまもとまちなか駐輪場草場第2',
             'latitude' => 32.80505034367533, 
             'longitude' => 130.7129042337946,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992847/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_020655_knng1e.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992852/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_020716_gl2rtk.png',
+            'image3' => '',
             ]);
             
             DB::table('facilities')->insert([
@@ -260,9 +281,12 @@ class FacilitySeeder extends Seeder
             'region_id' => 1,
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
-            'name' =>'くまもとまちなか駐輪場新市街第1',
-            'latitude' =>32.79882029484949, 
-            'longitude' =>130.70523006437205 , 
+            'name' =>'くまもとまちなか駐輪場新市街第',
+            'latitude' =>32.79869985380456, 
+            'longitude' =>130.70522667142765, 
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993738/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_022031_hu84k2.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993741/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_022045_y7s0qg.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993746/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_022058_pz0vjz.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -280,8 +304,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'くまもとまちなか駐輪場草場第1',
-            'latitude' =>32.79888342377248, 
-            'longitude' =>130.70520860670038  ,
+            'latitude' =>32.80603973048561, 
+            'longitude' =>130.7129401498957, 
+            'image' =>'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992518/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_020111_d3gsz7.png' ,
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992521/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_020130_opuyzj.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992524/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_020144_m1sels.png',
             ]);
         
             
@@ -300,8 +327,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'熊本市銀座橋際自転車駐車場',
-            'latitude' =>32.79861256133114, 
-            'longitude' =>130.71354422206804  ,
+            'latitude' =>32.798549405871505, 
+            'longitude' =>130.71346375233782 ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992098/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_015148_x4nrno.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992104/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_015202_vxdoj4.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992109/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_015235_byn9el.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -321,6 +351,9 @@ class FacilitySeeder extends Seeder
             'name' =>'熊電藤崎宮駅前駐輪場',
             'latitude' =>32.80913249986846, 
             'longitude' =>130.71334376010552  ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704990798/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_013234_chb9fr.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704990776/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_013205_kelbme.png',
+            'image3' => '',
             ]);
             
             DB::table('facilities')->insert([
@@ -340,6 +373,9 @@ class FacilitySeeder extends Seeder
             'name' =>'熊電黒髪町駅駐輪場',
             'latitude' => 32.81828641893125, 
             'longitude' => 130.71723352447725,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991005/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_013551_brln5o.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991008/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_013606_mwvjnb.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991012/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_013625_k3vvbx.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -357,8 +393,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'熊本市新水前寺駅西高架下自転車駐輪',
-            'latitude' => 32.794183203355786, 
-            'longitude' => 130.72674311891325,
+            'latitude' => 32.793523449790236, 
+            'longitude' => 130.72608912019632, 
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994894/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023903_oqdfcd.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994904/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023919_wy6f23.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994909/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023934_eua5yj.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -378,6 +417,9 @@ class FacilitySeeder extends Seeder
             'name' =>'熊本市新水前寺駅東高架下自転車駐輪場',
             'latitude' =>32.794280744730564, 
             'longitude' => 130.72673173340846 ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994900/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024034_h7zaed.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994913/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023949_z5pxen.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994918/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024005_gv7t3c.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -397,6 +439,9 @@ class FacilitySeeder extends Seeder
             'name' =>'熊本市熊本駅南高架下自転車駐輪場',
             'latitude' => 32.789365008957056, 
             'longitude' => 130.68769170646087,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991298/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014040_iccuae.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991301/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014103_rnr5lp.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991303/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014126_tqhgbp.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -416,6 +461,9 @@ class FacilitySeeder extends Seeder
             'name' =>'熊本市熊本駅北高架下自転車駐輪場',
             'latitude' => 32.79166479370247, 
             'longitude' =>130.68925644824782 ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991549/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014523_ajbw6s.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991552/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014537_k0ehih.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991427/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014327_f2skzg.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -435,6 +483,9 @@ class FacilitySeeder extends Seeder
             'name' =>'熊電韓々坂駅駐輪場',
             'latitude' =>32.82415290241018, 
             'longitude' => 130.7019045821518 ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704990670/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_013041_pi2trq.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704990667/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_013025_p7sifq.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704990665/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_013005_zftvkm.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -452,8 +503,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'熊本市健軍変電所前駐輪場',
-            'latitude' =>32.78122208406506, 
-            'longitude' =>130.76112770672395  ,
+            'latitude' =>32.78107701247689, 
+            'longitude' =>130.76114114352933, 
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995215/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024416_aoequq.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995220/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024431_qkc9hx.png',
+            'image3' => '',
             ]);
             
             DB::table('facilities')->insert([
@@ -473,6 +527,9 @@ class FacilitySeeder extends Seeder
             'name' =>'熊本市健軍自転車駐輪場',
             'latitude' =>32.77723119696149, 
             'longitude' =>130.7616945202181  ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995224/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024448_wtr8sx.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995229/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024505_qm7za2.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995234/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024521_vnlbfh.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -492,6 +549,9 @@ class FacilitySeeder extends Seeder
             'name' =>'熊本市富合駅高架下自転車駐車場',
             'latitude' =>32.713994348624915, 
             'longitude' =>130.6734172374088  ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995882/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_025714_pnphor.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995887/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_025724_qh2vms.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995892/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_025732_qd36rt.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -511,9 +571,12 @@ class FacilitySeeder extends Seeder
             'name' =>'熊本市熊本駅中央高架下自転車駐輪場',
             'latitude' => 32.79007037831318, 
             'longitude' =>130.68812881030667, 
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991422/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014246_fqptzy.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991424/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014304_dqmd2i.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991427/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014327_f2skzg.png',
             ]);
             
-            DB::table('facilities')->insert([
+            /*DB::table('facilities')->insert([
             'opening_time' => '24時間',
             'per_hour_fee' => '終日無料',
             'address' => '熊本県熊本市南区富合町志々水',
@@ -530,7 +593,10 @@ class FacilitySeeder extends Seeder
             'name' =>'熊本市富合駅西口自転車駐車場',
             'latitude' =>32.71393656216555, 
             'longitude' => 130.6733670126021 ,
-            ]);
+            'image' => '',
+            'image2' => '',
+            'image3' => '',
+            ]);*/
             
             DB::table('facilities')->insert([
             'opening_time' => '24時間',
@@ -549,6 +615,9 @@ class FacilitySeeder extends Seeder
             'name' =>'熊本市西熊本駅自転車駐車場',
             'latitude' =>32.762540354488564, 
             'longitude' =>130.6832734952345  ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995606/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_025209_chqaml.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995611/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_025225_gseyro.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995592/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_025243_tcwgjj.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -568,6 +637,9 @@ class FacilitySeeder extends Seeder
             'name' =>'熊本市武蔵塚駅前自転車駐車場',
             'latitude' =>32.85114237551196, 
             'longitude' => 130.77126945089282 ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704986567/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_002208_mf8hm6.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704986565/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_002146_arq2ho.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704986568/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_002220_xqn4kb.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -587,6 +659,9 @@ class FacilitySeeder extends Seeder
             'name' =>'武蔵塚駅前バイク置き場',
             'latitude' => 32.84924774641717, 
             'longitude' => 130.7691338117335,
+            'image' =>'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704986146/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-11_235421_on8zop.png' ,
+            'image2' =>'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704986162/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-11_235439_zfog5v.png' ,
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704986168/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-11_235453_ipfemo.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -606,6 +681,9 @@ class FacilitySeeder extends Seeder
             'name' =>'くまもとまちなか駐輪場シャワー通り',
             'latitude' =>32.798430780279574, 
             'longitude' =>130.70773135090184  ,
+             'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993754/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_022114_w4roou.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993758/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_022130_twmvdv.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993762/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_022202_e96aav.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -623,8 +701,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'パスート24サイクルパーク下通1丁目',
-            'latitude' => 32.802681241283025, 
-            'longitude' => 130.70832703554805,
+            'latitude' => 32.80244925637257, 
+            'longitude' => 130.70830840244872, 
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993219/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_021255_ncn3yb.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993223/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_021313_dpxaqs.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993227/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_021326_wrltfc.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -644,6 +725,9 @@ class FacilitySeeder extends Seeder
             'name' =>'サイクルパーク栄通り',
             'latitude' =>32.80151180765941, 
             'longitude' =>130.70722961590883  ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993483/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_021636_i5fglq.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993491/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_021727_mubrwc.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993487/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_021749_xpip55.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -661,8 +745,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'パスート24花畑コイン',
-            'latitude' =>32.80270284424475, 
-            'longitude' => 130.70581146441793 ,
+            'latitude' =>32.80263956362709, 
+            'longitude' => 130.70580225091237 ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994346/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023204_rfy1uq.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994338/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023136_czrl1u.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994342/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023149_k4ipew.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -682,6 +769,9 @@ class FacilitySeeder extends Seeder
             'name' =>'下通1丁目駐車場（バイクパーキング）',
             'latitude' =>32.80008994523158, 
             'longitude' => 130.7093743836862 ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993965/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_022526_mnovnu.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704993969/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_022547_yzrucq.png',
+            'image3' => '',
             ]);
             
             DB::table('facilities')->insert([
@@ -699,8 +789,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'熊本駅バイク駐車場',
-            'latitude' => 32.79153845193974, 
-            'longitude' =>130.68995837788242 ,
+            'latitude' => 32.79125678109731, 
+            'longitude' =>130.68998297056413, 
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991709/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014649_rck7lt.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991712/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014703_jl7wqf.png',
+            'image3' => '',
             ]);
             
             DB::table('facilities')->insert([
@@ -718,8 +811,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'SAKURA　MACHI　Kumamoto駐輪場',
-            'latitude' =>32.80123504171389, 
-            'longitude' =>130.70251088504548  ,
+            'latitude' =>32.80107596359001, 
+            'longitude' =>130.7025290158942 ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994439/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023318_nst4qg.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994445/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023349_gfxrvb.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994449/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023333_rf4zkn.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -737,8 +833,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'パークシティ24h白川公園',
-            'latitude' =>32.80406621168036, 
-            'longitude' => 130.71397150489543 ,
+            'latitude' =>32.80386534780654, 
+            'longitude' => 130.71405776686674  ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992126/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_015407_vln9bg.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992129/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_015423_p7wxnz.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992132/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_015439_l3wkzc.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -758,6 +857,9 @@ class FacilitySeeder extends Seeder
             'name' =>'パークシティ24h　水道町',
             'latitude' =>32.80352352836049, 
             'longitude' => 130.7139674573693 ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992114/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_015309_l9juah.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992114/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_015309_l9juah.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992123/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_015348_bimrsy.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -775,8 +877,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'本庄駐輪場（地域医療絵センター南側）',
-            'latitude' => 32.79332195772941, 
-            'longitude' => 130.70742085570356,
+            'latitude' => 32.79317689403902, 
+            'longitude' => 130.70739364782708, 
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991842/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014959_gifvkv.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991845/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014945_babarw.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991869/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_015025_wded4p.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -794,8 +899,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'南熊本駅前自転車駐輪場',
-            'latitude' =>32.78595664066438, 
-            'longitude' =>130.71197641517983  ,
+            'latitude' =>32.7854043364152, 
+            'longitude' =>130.71186882208883, 
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995437/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024948_n3cbb6.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995442/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_025003_oc2vq4.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995447/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_025019_jy3zvu.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -815,6 +923,9 @@ class FacilitySeeder extends Seeder
             'name' =>'熊本市平成駅自転車駐輪場',
             'latitude' =>32.781462243211394, 
             'longitude' =>130.7035442104174  ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995587/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_025123_ssvbgt.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995597/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_025138_zhyxwz.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995601/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_025153_jzxwqy.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -832,8 +943,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'水前寺児童公園前駐輪場',
-            'latitude' =>32.788364509305644, 
-            'longitude' =>130.73466080858194  ,
+            'latitude' =>32.78820861196374, 
+            'longitude' =>130.73460241469382, 
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992653/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_020330_tknpyz.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992657/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_020345_hkstvn.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992660/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_020359_zh82em.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -851,8 +965,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'熊本県庁駐輪場',
-            'latitude' =>32.78915184646809, 
-            'longitude' =>130.74072910672186  ,
+            'latitude' =>32.788968507394536,  
+            'longitude' =>130.74078463558223, 
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995196/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024304_k2lwxv.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995205/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024319_zteqjt.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995210/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024342_yrix0t.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -872,6 +989,9 @@ class FacilitySeeder extends Seeder
             'name' =>'庄口公園前駐輪場',
             'latitude' =>32.78037732515356, 
             'longitude' => 130.75484529991246 ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995238/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024539_dd6fet.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995243/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024555_wzphgg.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704995248/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_024611_k0hqs8.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -891,6 +1011,9 @@ class FacilitySeeder extends Seeder
             'name' =>'西里駅前駐輪場',
             'latitude' =>32.85484810585525, 
             'longitude' =>130.69997605089688  ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704990447/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_012637_akjqro.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704990449/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_012655_tupr6o.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704990452/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_012716_zamyga.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -908,8 +1031,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'光の森駅自転車駐輪場',
-            'latitude' =>32.85769496152904, 
-            'longitude' => 130.78694567976123 ,
+            'latitude' =>32.85752072004822, 
+            'longitude' =>130.78693448345743, 
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704986692/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_002412_gsob7m.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704986693/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_002432_vdh8qy.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704986689/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_002351_umnv3u.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -927,8 +1053,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'田崎橋自転車駐輪場',
-            'latitude' =>32.78541197599243, 
-            'longitude' => 130.68762343556318 ,
+            'latitude' =>32.78527672296951, 
+            'longitude' => 130.68767435087622 ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991717/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014721_ov5uzv.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991721/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014739_bbt2e2.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704991726/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_014809_u4alt2.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -948,6 +1077,9 @@ class FacilitySeeder extends Seeder
             'name' =>'熊本市植木駅自転車駐車場',
             'latitude' => 32.88040892169536, 
             'longitude' =>130.68132128712 ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704990327/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_012514_fofdpq.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704990329/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_012500_nqwuid.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704990332/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_012443_nfnkjl.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -967,6 +1099,9 @@ class FacilitySeeder extends Seeder
             'name' =>'桜の馬場駐車場',
             'latitude' =>32.80559995910776, 
             'longitude' =>130.7079611455867  ,
+            'image' =>'',
+            'image2' =>'' ,
+            'image3' => '',
             ]);
             
             DB::table('facilities')->insert([
@@ -984,8 +1119,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'サイクルパーク城見町通り',
-            'latitude' =>32.80238784895843, 
-            'longitude' =>130.70738966622332  ,
+            'latitude' =>32.80225680621113,  
+            'longitude' =>130.707388977189,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994243/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_022707_gyl549.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994247/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_022726_q7nz1s.png',
+            'image3' => '',
             ]);
             
             DB::table('facilities')->insert([
@@ -1005,6 +1143,9 @@ class FacilitySeeder extends Seeder
             'name' =>'ODA　MOTORCYICLE　PARKING',
             'latitude' =>32.79994919348787, 
             'longitude' =>130.71040527262736  ,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994681/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023705_gpotwq.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994677/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023650_v0doil.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994672/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023634_niu3p9.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -1022,8 +1163,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'香川駐車場',
-            'latitude' =>32.80825449457639, 
-            'longitude' =>130.71364895882402  ,
+            'latitude' =>32.8081113640763, 
+            'longitude' =>130.71365795643453, 
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992408/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_015952_kaxnnr.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992404/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_015918_eqbwje.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704992433/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_015939_jggznu.png',
             ]);
             
             DB::table('facilities')->insert([
@@ -1041,8 +1185,11 @@ class FacilitySeeder extends Seeder
             'created_at' => new DateTime(),
             'updated_at' => new DateTime(),
             'name' =>'熊本市辛島公園地下自転車駐車場',
-            'latitude' =>32.79888384220735, 
-            'longitude' => 130.7049659540905 ,
+            'latitude' =>32.798686950532705,  
+            'longitude' => 130.70421754422588,
+            'image' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994644/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023445_f2rppd.png',
+            'image2' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994657/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023536_f1jtle.png',
+            'image3' => 'https://res.cloudinary.com/dszqlgmmb/image/upload/v1704994652/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-01-12_023500_ktthh9.png',
             ]);
             
     }

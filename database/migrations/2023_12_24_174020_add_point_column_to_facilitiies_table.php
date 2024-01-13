@@ -14,10 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::table('facilities', function (Blueprint $table) {
-            $table->double('latitude',10,6 );
-            $table->double('longitude',10,6);
+            $table->double('latitude',9,7);
+            $table->double('longitude',10,7);
         });
-        
     }
 
     /**

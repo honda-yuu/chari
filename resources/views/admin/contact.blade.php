@@ -7,12 +7,12 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     
-    <x-app-layout>
+    <x-admin>
     
    
         <body>
            <h1>問い合わせフォーム</h1>
-           <form action="/park/contact" method="POST">
+           <form action="/admin/park/contact" method="POST">
                @csrf
                <div class="name">
                    <h2>お名前</h2>
@@ -28,7 +28,7 @@
                <input type="submit" onclick="contactform()" value="送信"/>
            </form>
            <div class="footer">
-            <a href="/park/">戻る</a>
+            <a href="/admin/park/">戻る</a>
            </div>
            
            <script>
@@ -39,5 +39,5 @@
                }
            </script>
         </body>
-    </x-app-layout>
+    </x-admin>
 </html>
