@@ -15,3 +15,39 @@
   cursor: pointer;
   font-size: 20px;
 }
+
+.link{
+  text-decoration: underline;
+}
+.image{
+  display: flex;
+  margin:10px 6px 6px 4px;
+}
+
+.image1{
+  margin-right: 6px;
+}
+.image2{
+  margin-right: 6px;
+}
+.image3{
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.name{
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.reviewshow{
+  font-size: x-large;
+}
+.kutikomi{
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+body{
+  background-color: #beeded;
+}

@@ -54,3 +54,23 @@ a:active {
   display: flex;
   justify-content: space-between;
 }
+
+.facilities{
+  padding-bottom: 20px;
+  border-style: groove;
+}
+
+table{
+  border-style:solid;
+}
+
+.title{
+  font-size: 20px;
+}
+.subtitle{
+  font-size: 30px;
+}
+
+body{
+  background-color: #beeded;
+}

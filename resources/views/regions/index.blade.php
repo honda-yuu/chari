@@ -5,13 +5,13 @@
         <title>Blog</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
     </head>
-       <body>
-       <header>
-          <h1>RESEARCH PARK</h1>
-       </header>
     
-           <h1>熊本市の駐輪場一覧</h1>
+     <x-app-layout>
+       <body>
+       
+          <h1>RESEARCH PARK</h1>
            
            <h1>駐輪場を探す</h1>
            <div class="search">
@@ -20,17 +20,22 @@
                    <input type="submit" value="検索">
                 </form>
            </div>
+           <h2>＜地区ごとの駐輪場一覧＞</h2>
            <div class='facilities'>
                 @foreach($facilities as $facility)
                     <div class='facility'>
-                        <h2 class='name'>
-                           <a href="/park/{{ $facility->id }}">{{ $facility->name }}</a>
-                        </h2>
-                       <p class='opening_time'>{{ $facility->opening_time }}</p>
-                       <p class='per_hour_fee'>{{ $facility->per_hour_fee }}</p>
-                       <p class='capacity'>{{ $facility->capacity }}</p>
-                       <a href="/regions/{{ $facility->region->id }}">{{ $facility->region->name }}</a>
-
+                        <table>    
+                           <h2 class='name'><a href="/park/{{ $facility->id }}">{{ $facility->name }}</a></h2>
+                           <tr>
+                           <tr><th>営業時間：</th><td>{{ $facility->opening_time }}</td></tr>
+                           <tr><th>料金：</th><td>{{ $facility->per_hour_fee }}</td></tr>
+                           <tr><th>駐車台数：</th><td>{{ $facility->capacity }}</td></tr>
+                           <tr><th>地区：</th><td><a href="/regions/{{ $facility->region->id }}">{{ $facility->region->area }}</a></td></tr>
+                           <div class="facilityimage">
+                           <td><img class='image1'src="{{ $facility->image }}" alt="" width="200"></td>
+                           </div>
+                           </tr>
+                       </table>
                     </div>
                 @endforeach
            </div>
@@ -42,3 +47,5 @@
             
             
         </body>
+        </x-app-layout>
+    </html>

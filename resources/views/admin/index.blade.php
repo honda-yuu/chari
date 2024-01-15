@@ -49,7 +49,7 @@
            </div>
 
            <div class='paginate'>
-               {{ $facilities->links() }}
+               {{ $facilities->links('vendor.pagination.topics') }}
            </div>
            
     

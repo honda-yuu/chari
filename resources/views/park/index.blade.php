@@ -10,16 +10,16 @@
     
     <x-app-layout>
        <header>
-          <h1>RESEARCH PARK</h1>
+          <h1 class='subtitle'>RESEARCH PARK</h1>
        </header>
     
    
         <body>
-           <h1>熊本市の駐輪場一覧</h1>
+           <h1 class='title'>熊本市の駐輪場一覧</h1>
                     
            
            
-           <h1 class="searchform">駐輪場を探す</h1>
+           <h1 class="searchform">・駐輪場を探す</h1>
         
            <div class="search">
                 <form action="/park/facilitysearch" method="GET">
@@ -39,7 +39,7 @@
                            <tr><th>駐車台数：</th><td>{{ $facility->capacity }}</td></tr>
                            <tr><th>地区：</th><td><a href="/regions/{{ $facility->region->id }}">{{ $facility->region->area }}</a></td></tr>
                            <div class="facilityimage">
-                           <td><img class='image1'src="{{ $facility->image }}" alt="" width="100"></td>
+                           <td><img class='image1'src="{{ $facility->image }}" alt="" width="200"></td>
                            </div>
                            </tr>
                        </table>
@@ -49,7 +49,7 @@
            </div>
 
            <div class='paginate'>
-               {{ $facilities->links() }}
+               {{ $facilities->links('vendor.pagination.topics') }}
            </div>
            
     

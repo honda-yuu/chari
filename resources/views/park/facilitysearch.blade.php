@@ -10,14 +10,14 @@
     
     <x-app-layout>
        <header>
-          <h1>RESEARCH PARK</h1>
+          <h1 class='subtitle'>RESEARCH PARK</h1>
        </header>
     
    
         <body>
-           <h1>熊本市の駐輪場一覧</h1>
+           <h1 class='title'>熊本市の駐輪場一覧</h1>
            
-           <h1>駐輪場を探す</h1>
+           <h1>・駐輪場を探す</h1>
            <div class="search">
                 <form action="/park/facilitysearch" method="GET">
                     @csrf
@@ -26,7 +26,7 @@
                 </form>
                 <form action="/park/facilitysearch" method="GET">
                     @csrf
-                       <h2>地域ごとで探す</h2>
+                       <h2>・地域ごとで探す</h2>
                        <select name="regionId" class="form-config" >
                             <option value="">--選択</option>
                                     
@@ -43,13 +43,18 @@
            <div class='facilities'>
                 @foreach($facilities as $facility)
                     <div class='facility'>
+                        <table>
                         <h2 class='name'>
                            <a href="/park/{{ $facility->id }}">{{ $facility->name }}</a>
                         </h2>
-                       <p class='opening_time'>{{ $facility->opening_time }}</p>
-                       <p class='per_hour_fee'>{{ $facility->per_hour_fee }}</p>
-                       <p class='capacity'>{{ $facility->capacity }}</p>
-                        <img class='image1'src="{{ $facility->image }}" alt="">
+                        <tr>
+                        <tr><th>営業時間：</th><td>{{ $facility->opening_time }}</td></tr>
+                        <tr><th>料金：</th><td>{{ $facility->per_hour_fee }}</td></tr>
+                        <tr><th>駐車台数：</th><td>{{ $facility->capacity }}</td></tr>
+                        <tr><th>地区：</th><td><a href="/regions/{{ $facility->region->id }}">{{ $facility->region->area }}</a></td></tr>
+                        <td><img class='image1'src="{{ $facility->image }}" alt="" width="200"></td>
+                        </tr>
+                        </table>
                     </div>
                 @endforeach
            </div>

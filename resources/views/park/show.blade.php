@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Blog</title>
          <link rel="stylesheet" href="{{ asset('/css/star.css') }}">
+         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
@@ -49,6 +50,8 @@ function initMap() {
 } </script>
          
             <div class='detail'>
+                <table>
+                    <tr>
                 <div class='opening_time'>
                     <h3>営業時間：{{$facility->opening_time}}</h3>
                 </div>
@@ -62,7 +65,7 @@ function initMap() {
                     <h3>住所：{{$facility->address}}</h3>
                 </div>
                 <div class='link'>
-                    <h3>リンク：{{$facility->link}}</h3>
+                    <h3>リンク：<a href="{{$facility->link}}">{{$facility->link}}</a></h3>
                 </div>
                 <div class='phone_number'>
                     <h3>電話番号：{{$facility->phone_number}}</h3>
@@ -79,15 +82,17 @@ function initMap() {
                 <div class='receipt'>
                     <h3>領収書：{{$facility->receipt}}</h3>
                 <div class='image'>
-                    <img class='image1'src="{{ $facility->image }}" alt="">
-                     <img class='image1'src="{{ $facility->image2 }}" alt="">
-                      <img class='image1'src="{{ $facility->image3 }}" alt="">
+                    <div class='image1'><img class='image1'src="{{ $facility->image }}" alt=""  width="300"></div>
+                     <div><img class='image2'src="{{ $facility->image2 }}" alt=""  width="300"></div>
+                      <div><img class='image'src="{{ $facility->image3 }}" alt=""  width="300"></div>
                 </div>
                 </div>
+                </tr>
+                </table>
             </div>
             
             <div class='reviewshow'>
-                 <h2>口コミ</h2>
+                 <h2 class='kutikomi'><口コミ></h2>
                 @foreach($reviews as $review)
                 <div class='reviews'>
                    

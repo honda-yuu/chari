@@ -104,8 +104,7 @@ class FacilitySeeder extends Seeder
             
             DB::table('facilities')->insert([
             'opening_time' => '8-21時（20時まで入庫可）',
-            'per_hour_fee' => '自転車　当日鶴屋での買い物レシート2160円以上で無料。レシートなしなら1日100円
-            　　　　　　　　　　　　　　　　自動二輪　当日鶴屋での買い物レシート2160円以上で無料。レシートなしなら1日200円　　　　　　　　　',
+            'per_hour_fee' => '自転車　当日鶴屋での買い物レシート2160円以上で無料。レシートなしなら1日100円　自動二輪　当日鶴屋での買い物レシート2160円以上で無料。レシートなしなら1日200円　　　　　　　　　',
             'address' => '熊本県熊本市中央区手取本町6-1',
             'link' => 'https://www.tsuruya-dept.co.jp/service/parking/index.html',
             'phone_number' => '096-327-3703',

@@ -22,7 +22,7 @@ class Region extends Model
         return $this->hasMany(Facility::class);
     }
     
-    public function getByRegion(int $limit_count = 5)
+    public function getByRegion(int $limit_count = 10)
     {
      return $this->facilities()->with('region')->orderBy('updated_at', 'DESC')->paginate($limit_count);
     }
